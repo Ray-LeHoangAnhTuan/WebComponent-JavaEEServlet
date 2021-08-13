@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Thread Safety</title>
+</head>
+<body>
+	<table style="width:600px;">
+		<tr>
+			<td style="width:100%;">
+				<form id="formNonThreadSafe" method="post" action="threadsafegetseed.do">
+					<span>select one:</span><br>
+					<input type="radio" name="threadsafetyselection" value="requestthread" /> Request Level Attribute<br>
+					<input type="radio" name="threadsafetyselection" value="nonthreadsafe" /> Non thread safe<br>
+					<input type="radio" name="threadsafetyselection" value="threadsafe" /> Thread safe<br>
+					
+					<input type="submit" value="Execute"/>
+				</form>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
